@@ -8,5 +8,11 @@ $cache = '../cache';
 
 $blade = new Blade($views, $cache);
 
-echo $blade->view()->make('basica')->render();
+$titulo = "Este es el título";
+$nombre = "Pepe Pepon";
+$edad = 23;
+$maximo = 4;
+$aficiones = ['PHP', 'AJAX', 'JS', 'Blade'];
+
+echo $blade->view()->make('plantilla1',compact('nombre', 'titulo', 'edad', 'maximo', 'aficiones'))->render();
 
