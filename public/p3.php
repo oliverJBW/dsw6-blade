@@ -12,3 +12,4 @@ $frutas = ['manzana', 'pera', 'uva', 'sandia', 'mandarina'];
 //$frutas = [];
 
 echo $blade->view()->make('layouts.child2', compact('frutas'))->render();
+
